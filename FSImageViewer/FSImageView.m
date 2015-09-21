@@ -198,6 +198,7 @@
 - (void)setupImageViewWithImage:(UIImage *)aImage {
     if (!aImage) {
         return;
+        [self layoutScrollViewAnimated:NO];
     }
 
     _loading = NO;
