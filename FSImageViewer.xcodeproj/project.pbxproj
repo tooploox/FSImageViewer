@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15CD77A61BABF7050070EC35 /* libEGOCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CD77A51BABF7050070EC35 /* libEGOCache.a */; };
-		15CD77A81BABF70A0070EC35 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CD77A71BABF70A0070EC35 /* libAFNetworking.a */; };
-		15CD77AA1BABF7160070EC35 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CD77A91BABF7160070EC35 /* libPods.a */; };
-		15CD77AC1BABF71C0070EC35 /* libUAProgressView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CD77AB1BABF71C0070EC35 /* libUAProgressView.a */; };
 		53EF70271A9A38B9000FBFE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EF70261A9A38B9000FBFE2 /* Images.xcassets */; };
 		5AB0DA258592480FB4099411 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 746D153768E9481F8194ECCE /* libPods.a */; };
 		69855A85F6C241808F6F609F /* libPods-FSImageViewerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4F4DB52EA04D489651AD23 /* libPods-FSImageViewerTests.a */; };
@@ -75,10 +71,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		15CD77A51BABF7050070EC35 /* libEGOCache.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEGOCache.a; path = "Pods/../build/Debug-iphoneos/libEGOCache.a"; sourceTree = "<group>"; };
-		15CD77A71BABF70A0070EC35 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
-		15CD77A91BABF7160070EC35 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
-		15CD77AB1BABF71C0070EC35 /* libUAProgressView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUAProgressView.a; path = "Pods/../build/Debug-iphoneos/libUAProgressView.a"; sourceTree = "<group>"; };
 		2926F8C4CE2E738802DA8060 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3E4F4DB52EA04D489651AD23 /* libPods-FSImageViewerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FSImageViewerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EF70261A9A38B9000FBFE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -154,10 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15CD77AC1BABF71C0070EC35 /* libUAProgressView.a in Frameworks */,
-				15CD77AA1BABF7160070EC35 /* libPods.a in Frameworks */,
-				15CD77A81BABF70A0070EC35 /* libAFNetworking.a in Frameworks */,
-				15CD77A61BABF7050070EC35 /* libEGOCache.a in Frameworks */,
 				FDD96CE417CB9B7400B66931 /* libFSImageViewer.a in Frameworks */,
 				FDD96CEB17CB9B9000B66931 /* CFNetwork.framework in Frameworks */,
 				FDD96CEC17CB9B9100B66931 /* Security.framework in Frameworks */,
@@ -219,10 +207,6 @@
 		FD89E29217CB99D900A41D91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				15CD77AB1BABF71C0070EC35 /* libUAProgressView.a */,
-				15CD77A91BABF7160070EC35 /* libPods.a */,
-				15CD77A71BABF70A0070EC35 /* libAFNetworking.a */,
-				15CD77A51BABF7050070EC35 /* libEGOCache.a */,
 				FDD96CE917CB9B8800B66931 /* CFNetwork.framework */,
 				FDD96CE717CB9B8500B66931 /* Security.framework */,
 				FDD96CE517CB9B8000B66931 /* QuartzCore.framework */,
@@ -668,10 +652,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FSImageViewerDemo/FSImageViewerDemo-Prefix.pch";
 				INFOPLIST_FILE = "FSImageViewerDemo/FSImageViewerDemo-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -687,10 +667,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FSImageViewerDemo/FSImageViewerDemo-Prefix.pch";
 				INFOPLIST_FILE = "FSImageViewerDemo/FSImageViewerDemo-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
