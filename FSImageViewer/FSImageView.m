@@ -198,12 +198,18 @@
 - (void)setupImageViewWithImage:(UIImage *)aImage {
     if (!aImage) {
         return;
-        [self layoutScrollViewAnimated:NO];
     }
 
     _loading = NO;
     _progressView.hidden = YES;
-    _imageView.image = aImage;
+    
+    
+    if (_imageView.image == nil) {
+        _imageView.image = aImage;
+        [self layoutScrollViewAnimated:NO];
+    } else {
+        _imageView.image = aImage;
+    }
 
     self.userInteractionEnabled = YES;
 
@@ -234,6 +240,7 @@
     _image.failed = YES;
     self.userInteractionEnabled = NO;
     _progressView.hidden = YES;
+    [self layoutScrollViewAnimated:NO];
     [[NSNotificationCenter defaultCenter] postNotificationName:kFSImageViewerDidFinishedLoadingNotificationKey object:@{
             @"image" : self.image,
             @"failed" : @(YES)
