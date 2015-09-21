@@ -203,9 +203,7 @@
     _loading = NO;
     _progressView.hidden = YES;
     _imageView.image = aImage;
-    [self layoutScrollViewAnimated:NO];
 
-    [[self layer] addAnimation:[self fadeAnimation] forKey:@"opacity"];
     self.userInteractionEnabled = YES;
 
     [[NSNotificationCenter defaultCenter] postNotificationName:kFSImageViewerDidFinishedLoadingNotificationKey object:@{
@@ -233,7 +231,6 @@
 
     _imageView.image = FSImageViewerErrorPlaceholderImage;
     _image.failed = YES;
-    [self layoutScrollViewAnimated:NO];
     self.userInteractionEnabled = NO;
     _progressView.hidden = YES;
     [[NSNotificationCenter defaultCenter] postNotificationName:kFSImageViewerDidFinishedLoadingNotificationKey object:@{
