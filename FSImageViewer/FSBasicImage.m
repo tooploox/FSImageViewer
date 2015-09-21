@@ -59,8 +59,4 @@
     return [self initWithImageURL:nil name:aName image:aImage];
 }
 
-- (id)initWithPlaceholderImage:(UIImage *)placeholder fullSizeUrl:(NSURL *)URL {
-    return [self initWithImageURL:URL name:nil image:placeholder];
-}
-
 @end
