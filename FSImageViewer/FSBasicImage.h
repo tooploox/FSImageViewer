@@ -41,4 +41,6 @@
 /// @param name title of the image
 - (id)initWithImage:(UIImage *)image name:(NSString *)name;
 
+- (id)initWithPlaceholderImage:(UIImage *)placeholder fullSizeUrl:(NSURL *)URL;
+
 @end
